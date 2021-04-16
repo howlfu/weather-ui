@@ -1,0 +1,15 @@
+body {
+  font-size: 3.5vw;
+}
+
+#tag-portrait {
+  display: block;
+}
+
+#tag-landscape {
+  display: none;
+}
+
+#tag-square {
+  display: none;
+}

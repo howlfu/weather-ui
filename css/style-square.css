@@ -1,0 +1,84 @@
+@media screen and (min-aspect-ratio: 3/4) and (max-aspect-ratio: 4/3) {
+
+  #tag-portrait {
+    display: none;
+  }
+
+  #tag-landscape {
+    display: none;
+  }
+
+  #tag-square {
+    display: block;
+  }
+
+  .console .console-log-content {
+    width: 67vw;
+    padding: 1vw;
+    padding-right: 3vw;
+  }
+
+  .console .console-log {
+    width: 65vw;
+  }
+  .console .console-info {
+    width: 35vw;
+  }
+  .console .console-info-panel  {
+    width: 35vw;
+    height: 15vh;
+  }
+
+  /* General Components */
+  /* ============================================================= */
+
+  .block_border_left_title {
+    padding-left: 1vh;
+    font-size: 2.2vh;
+    letter-spacing: 1vh;
+  }
+
+  /* notify-status ----------------------------------------------- */
+
+  .notify-status {
+    width: 20vw;
+  }
+
+  /* DeviceViews General */
+  /* ============================================================= */
+
+  /* history_date_notify  ---------------------------------------- */
+
+  .history-date-notify_icon {
+
+  }
+
+  .history-date-notify_date {
+    font-size: 85%;
+  }
+
+  /* DeviceGeneral */
+  /* ============================================================= */
+
+  .device_device_location_title {
+    font-size: 50%;
+    right: 0.5vh;
+    letter-spacing: 0.3vh;
+  }
+
+  /* NotifyView */
+  /* ============================================================= */
+
+  .notify_section_title {
+    font-size: 65%;
+  }
+
+  .notify_section_detail_number {
+    font-size: 55%;
+  }
+
+  .notify_section_detail_item_title {
+    font-size: 70%;
+  }
+
+}

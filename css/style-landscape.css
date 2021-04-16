@@ -1,0 +1,20 @@
+@media screen and (min-aspect-ratio: 3/4) and (max-aspect-ratio: 16/1) {
+
+  body {
+    font-size: 3.5vh;
+  }
+
+  #tag-portrait {
+    display: none;
+  }
+
+  #tag-landscape {
+    display: none;
+  }
+
+  #tag-square {
+    display: none;
+  }
+
+
+}

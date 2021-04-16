@@ -1,0 +1,52 @@
+/*  Phone-Portait  ------------------------------------------------------- */
+@media only screen and (orientation: portrait) and  (max-device-width: 420px) {
+  .login-row{
+    font-size: 4.5vw;
+  }
+
+  .login-warning {
+    font-size: 3.8vw;
+  }
+
+  .logoin-logo {
+    margin-top: 30vw;
+    width: 50vw;
+    height: 30vw;
+  }
+
+  .login-content .row {
+      margin-top: 5vmin;
+  }
+
+  .login-checkbox-text {
+      height: 25px;
+      font-size: 3.5vw;
+  }
+
+  .login-content .submit {
+    font-size: 5vw;
+    padding: 5px;
+  }
+
+  .login-string{
+    text-align: center;
+    border-radius: 15px;
+    font-size: 4.5vw;
+    font-weight: lighter;
+  }
+
+  .login-input{
+    border-radius: 7px;
+    font-size: 4.5vw;
+  }
+
+  .login-ripple{
+    background:  url('../images/login-ripple-phone.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 10vmin auto;
+    width: 25vw;
+    height: 25vw;
+  }
+
+}

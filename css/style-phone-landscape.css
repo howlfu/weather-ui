@@ -1,0 +1,8 @@
+/*  Phone-Landscape  ------------------------------------------------------- */
+@media only screen and (orientation: landscape) and  (max-device-width: 700px),
+  only screen
+    and (orientation: landscape)
+    and (max-device-width : 736px)
+    and (-webkit-min-device-pixel-ratio : 3) {
+      
+    }

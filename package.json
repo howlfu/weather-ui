@@ -1,0 +1,21 @@
+{
+  "name": "weather-ui-work",
+  "version": "1.0.0",
+  "description": "",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-cssmin": "^0.2.0",
+    "gulp-rename": "^2.0.0",
+    "mkdirp": "^1.0.4"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-webserver": "^0.9.1"
+  }
+}

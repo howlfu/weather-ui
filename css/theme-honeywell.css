@@ -1,0 +1,568 @@
+body {
+  background-color: #ffffff;
+}
+
+@font-face {
+	font-family:'KozMinPr6N';
+	src:url('../fonts/honeywell/SourceHanSansTW-Regular.otf');
+  font-weight: normal;
+}
+
+@font-face {
+	font-family:'KozMinPr6N';
+	src:url('../fonts/honeywell/SourceHanSansTW-Bold.otf');
+  font-weight: bold;
+}
+
+@font-face {
+	font-family:'KozMinPr6N';
+	src:url('../fonts/honeywell/SourceHanSansTW-Medium.otf');
+  font-weight: 300;
+}
+
+@font-face {
+	font-family:'KozMinPr6N';
+	src:url('../fonts/honeywell/SourceHanSansTW-Light.otf');
+  font-weight: 100;
+}
+
+@font-face {
+	font-family:'KozGoPr6N';
+	src:url('../fonts/honeywell/SourceHanSansTW-Light.otf');
+}
+
+.top-nav-bar {
+  background-color: #404040
+}
+
+.hex-logo {
+  background-image: url('../images/honeywell/logo.svg');
+}
+
+.logo-container, .logo {
+  width: 16vh;
+}
+
+.start_time {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background: none;
+}
+
+.start_dash-board {
+  background-image: url('../images/honeywell/start_dash-board.png');
+  background-size: 28vw;
+  background-repeat: repeat;
+  background-position: center;
+}
+
+.start_date_notify {
+  background-color: #ffffff;
+  width: 100vw;
+}
+
+
+.notify-status-mask {
+  background: none;
+}
+
+.notify-status-text {
+  color: #393939;
+}
+
+.notify-status-normal {
+  background-image: url('../images/honeywell/notify_status_normal.png');
+}
+
+.start_time {
+  margin: 8vw auto;
+  padding: 2vw;
+}
+
+.start_time-time {
+  font-family: 'KozMinPr6N', 'NotoSans';
+  font-weight: 300;
+  letter-spacing: 5px;
+}
+
+.page-start .page-name-notify {
+  height: 13vw;
+}
+
+.notify-bar {
+  height: 13vw;
+  padding-top: 5vw;
+}
+
+.page-start .notify-status-text-main {
+  color: #3e3a39;
+}
+
+.notify-status-num {
+  color: #ffffff;
+}
+
+.notify-status-text-main {
+  font-weight: 300;
+}
+
+.notify-status-text-main {
+  font-weight: 300;
+}
+
+.start_menu-image {
+  background-image: url('../images/honeywell/start_menu.png');
+  color: #3e3a39;
+  font-weight: 300;
+}
+
+.start_menu-image:active {
+  background-image: url('../images/honeywell/start_menu_blur.png');
+}
+
+.page-floor-select,
+.page-device-select,
+.page-settings,
+.page-notify,
+.page-floor,
+.page-device,
+.page-mute-device,
+.page-engineer-mode
+{
+  background-color: #606060;
+}
+
+.view-control-bar, .floor-view-toolbar, .view-plan-mv-btn
+{
+  background-color: #606060;
+}
+
+.datetime-bar {
+  border: 3px solid #ffffff;
+}
+
+.datetime-mask {
+  background: none;
+}
+
+.page-floor-select .notify-bar,
+.page-device-select .notify-bar,
+.page-settings .notify-bar,
+.page-notify .notify-bar,
+.page-device .notify-bar,
+.page-mute-device .notify-bar,
+.page-engineer-mode .notify-bar
+{
+  padding-top: 0px;
+}
+
+.notify-status-text-main {
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.floor-select-panel {
+  background-image: url('../images/honeywell/floor-select_panel.svg');
+}
+
+.page-floor-select .notify-status-normal,
+.page-device-select .notify-status-normal,
+.page-notify .notify-status-normal,
+.page-device .notify-status-normal
+{
+  background-image: url('../images/honeywell/notify_status_normal_white.png');
+}
+
+.floor-select-container {
+    background-image: url('../images/honeywell/floor-select_bg.png');
+}
+
+.floor-select-pos {
+    background-image: url('../images/honeywell/floor-select_pos.png');
+}
+
+.floor-select-info-name {
+   background-color: #45a8ea;
+}
+
+.floor-select-info-block {
+   background-color: #3d667c;
+}
+
+.floor-select-block-bg {
+  background-color: #3d667c;
+}
+
+.floor-select-block-selected .floor-select-block-text, .floor-select-block-text {
+  color: #ffffff;
+}
+
+.floor-select-block-selected .floor-select-block-bg {
+  background-color: #45a8ea;
+}
+
+.floor-select-block-control {
+  color: #ffffff;
+}
+
+.device_type_bar_item {
+  background-color: #3d667c;
+  color: #ffffff;
+}
+
+.device_type_bar_icon_left {
+  background-image: url('../images/honeywell/device-type_bar_icon_left.png');
+}
+
+.device_type_bar_icon_right {
+  background-image: url('../images/honeywell/device-type_bar_icon_right.png');
+}
+
+.device_type_bar_left_selected .device_type_bar_icon_left  {
+  background-image: url('../images/honeywell/device-type_bar_icon_left_selected.png');
+}
+
+.device_type_bar_right_selected .device_type_bar_icon_right {
+  background-image: url('../images/honeywell/device-type_bar_icon_right_selected.png');
+}
+
+
+.device_select_panel_block {
+  border: none;
+  background-color: #243b49;
+}
+
+.device_select_panel_block_selecting {
+  border: none;
+  background-color: #739bb5;
+}
+
+.device_select_panel_block_selected {
+    background-color: #3d667c;
+}
+
+.device_select_panel_block_title {
+  color: #ffffff;
+}
+
+.device_select_panel_item {
+  color: #ffffff;
+}
+
+.device_select_panel_item_selected {
+  border-left: 5vw solid rgba(255, 255, 255, 0.39);
+  border-right: 5vw solid rgba(255, 255, 255, 0.39);
+}
+
+.settings_bar_top_indicator {
+  background-image: url('../images/honeywell/settings_bar_top_indicator.png');
+}
+
+.settings_bar_bottom_indicator {
+  background-image: url('../images/honeywell/settings_bar_bottom_indicator.png');
+}
+
+.settings_menu {
+  background-image:
+    url('../images/honeywell/settings_menu_status.png'),
+    url('../images/honeywell/settings_menu_switch.png'),
+    url('../images/honeywell/settings_menu_fae.png'),
+    url('../images/honeywell/settings_menu_about.png'),
+    url('../images/honeywell/settings_menu.png');
+}
+
+
+.settings_menu_status_selected {
+  background-image:
+    url('../images/honeywell/settings_menu.png'),
+    url('../images/honeywell/settings_menu_status_selected.png'),
+    url('../images/honeywell/settings_menu_switch.png'),
+    url('../images/honeywell/settings_menu_fae.png'),
+    url('../images/honeywell/settings_menu_about.png');
+}
+
+.settings_menu_switch_selected {
+  background-image:
+    url('../images/honeywell/settings_menu.png'),
+    url('../images/honeywell/settings_menu_status.png'),
+    url('../images/honeywell/settings_menu_switch_selected.png'),
+    url('../images/honeywell/settings_menu_fae.png'),
+    url('../images/honeywell/settings_menu_about.png');
+}
+
+.settings_menu_fae_selected {
+  background-image:
+    url('../images/honeywell/settings_menu.png'),
+    url('../images/honeywell/settings_menu_status.png'),
+    url('../images/honeywell/settings_menu_switch.png'),
+    url('../images/honeywell/settings_menu_fae_selected.png'),
+    url('../images/honeywell/settings_menu_about.png');
+}
+
+.settings_menu_about_selected {
+  background-image:
+    url('../images/honeywell/settings_menu.png'),
+    url('../images/honeywell/settings_menu_status.png'),
+    url('../images/honeywell/settings_menu_switch.png'),
+    url('../images/honeywell/settings_menu_fae.png'),
+    url('../images/honeywell/settings_menu_about_selected.png');
+}
+
+.page-notify {
+  background-image: url('../images/honeywell/status_bg.png');
+  background-size: 10vw;
+}
+
+.line_background {
+  background: none;
+}
+
+.notify_section_progress_bar {
+  background-color: #45a8ea;
+}
+
+.notify_section_progress_bar_warning {
+  background-color: #ee3124;
+}
+
+.notify_section_detail_button {
+  background-image: url('../images/honeywell/detail_button_expand.png');
+}
+
+.notify_section_selecting .notify_section_detail_button {
+  background-image: url('../images/honeywell/detail_button_close.png');
+}
+
+.view-plan-data-btn {
+  background-image: url('../images/honeywell/view-plan-data-btn.svg');
+}
+
+.view-plan-data-panel {
+  border: none;
+  background-color: #a0a0a0;
+}
+
+.view-plan-static-bar-ok {
+  background-color: #45a8ea;
+}
+
+.view-plan-static-bar-error {
+  background-color: #ee3124;
+}
+
+.view-plan-static-bar-num,
+.view-plan-static-item_err .view-plan-static-bar-num {
+  color: #ffffff;
+}
+
+
+.view-plan-map-control-content {
+  background-image: url('../images/honeywell/view-plan-map-control.svg');
+}
+
+.view-plan-map-control-btn {
+  background-image: url('../images/honeywell/view-plan-map-control-btn.svg');
+}
+
+.view-plan-map-control-btn_sel {
+  background-image: url('../images/honeywell/view-plan-map-control-btn_sel.svg');
+}
+
+.view-plan-zoom-control {
+  background-color: #3d667c;
+}
+
+.view-plan-zoom-control-btn {
+  background-color: #243b49 ;
+}
+
+.view-plan-zoom-control-scroll-btn {
+  background-image: url('../images/honeywell/view-plan-map-control-scroll-btn.svg');
+}
+
+.view-plan-map-control-area {
+  border-color: #8ac8f1;
+  background-image: repeating-linear-gradient(
+    45deg, rgba(139,201,242,1), rgba(139,201,242,1) 1px,
+    rgba(139,201,242,0.2) 1px, rgba(139,201,242,0.2) 5px);
+}
+
+.page-about-us .datetime-bar {
+  border-color: #3e3a39;
+  color: #3e3a39;
+}
+
+.page-about-us .notify-status-text-main {
+  color: #3e3a39;
+}
+
+.page-about-us .notify-bar {
+  padding-top: 2vw;
+}
+
+.about_us-more {
+  display: none;
+}
+
+.about_us-logo {
+  background-image: url('../images/honeywell/about-us_logo.png');
+  margin-top: 18vh;
+}
+
+.page-about-us {
+    background-image: url('../images/honeywell/about-us_bg.png');
+    background-size: 30vw;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    height: 100vh;
+}
+
+.history-date-notify_date {
+  color: #ffffff;
+}
+
+.device_category {
+  font-family: 'KozMinPr6N', 'NotoSans';
+  font-weight: 100;
+}
+
+.device-category-bar {
+  border: 3px solid #ffffff;
+}
+
+.device-category-bar_red {
+  border-color: #c10d23;
+}
+
+.block_border_right {
+  border-style: solid;
+  border-image-source: url('../images/honeywell/block_border_right.png');
+  border-image-slice: 64 5 3;
+
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.block_border_right_red {
+  border-image-source: url('../images/honeywell/block_border_right_red.png');
+}
+
+.block_border_left {
+  border-image-source: url('../images/honeywell/block_border_left.png');
+}
+
+.block_border_left_red {
+  border-image-source: url('../images/honeywell/block_border_left_red.png');
+}
+
+.block_border_bottom {
+  border-image-source: url('../images/honeywell/block_border_bottom.png');
+}
+
+.block_border_bottom_red {
+  border-image-source: url('../images/honeywell/block_border_bottom_red.png');
+}
+
+.device_info_type {
+  background-color: #3d667c;
+}
+
+.block_border {
+  border-color: #ffffff;
+}
+
+.mute-device_section_detail_list {
+  border-color: #ffffff;
+}
+
+.mute-device_section_detail_item_btn {
+  background-color: #3d667c;
+  color: #ffffff;
+}
+
+.mute-device_section_selecting .toggle-control-indicator {
+  background-image: url('../images/honeywell/detail_button_close.png');
+}
+
+.toggle-control-indicator {
+  background-image: url('../images/honeywell/detail_button_expand.png');
+}
+
+.toggle-control-btn {
+  background-image: url('../images/honeywell/toggle-btn.svg');
+}
+
+.toggle-control-btn_sel {
+  background-image: url('../images/honeywell/toggle-btn_sel.svg');
+}
+
+.toolbar-combo-list {
+  border-color: #ffffff;
+}
+
+.toolbar-combo-list-item_sel {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.notify-status-manual {
+  background-image: url('../images/honeywell/notify_status_manual.png');
+}
+
+.notify-status-danger {
+  background-image: url('../images/honeywell/notify_status_danger.png');
+}
+
+.notify-status-abnormal {
+  background-image: url('../images/honeywell/notify_status_abnormal.png');
+}
+
+.notify-status-normal {
+  background-image: url('../images/honeywell/notify_status_normal.png');
+}
+
+.notify-status-abnormal-manual {
+  background-image: url('../images/honeywell/notify_status_abnormal_manual.png');
+}
+
+.notify-status-danger-manual {
+  background-image: url('../images/honeywell/notify_status_danger_manual.png');
+}
+
+.view-control-btn-manual_sel {
+  background-image: url('../images/honeywell/btn_manual-mode_sel.svg');
+}
+
+
+.password-input, .password-btn-container, .select-pad  {
+  border-color: #ffffff;
+}
+
+.select-pad-switch-btn {
+  background-color: rgba(69, 168, 234, 0.3);
+}
+
+.password-pad-btn {
+  background-color: rgba(69, 168, 234, 0.4);
+}
+
+.select-pad-switch-btn {
+  color: #45a8ea;
+}
+
+/* Landscape */
+@media screen and (min-aspect-ratio: 3/4) and (max-aspect-ratio: 16/1) {
+.start_time {
+  margin: 5.5vh auto;
+  padding: 2vh;
+}
+
+.notify-bar {
+  height: 9vh;
+  padding-top: 3vh;
+}
+
+.floor-select-container {
+  background-image: url('../images/honeywell/floor-select_bg_h.png');
+}
+
+}

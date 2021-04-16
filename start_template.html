@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-portrait.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-landscape.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-square.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-pad-general.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-pad-landscape.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-pad-portrait.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-phone-general.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-phone-landscape.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-phone-portrait.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-phone-square.css" />
+
+
+    <!--
+    <link rel="stylesheet" type="text/css" href="css/theme-honeywell.css" />
+    -->
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="js/general.js"></script>
+  </head>
+
+<body class="page-start">
+<div class="top-nav-bar">
+  <div class="logo">Weather Signage</div>
+  <div class="top-item top-item-api"></div>
+  <div class="top-item top-item-wifi"></div>
+</div>
+<div class="main">
+  <div class="main-page page-dashboard">
+    <div class="main-date-time">
+      <div class="main-time">18:00</div>
+      <div class="main-date">2021 年 04 月 15 日 星期四</div>
+    </div>
+
+    <div class="main-notify-container" >
+      <div class="main-notify">
+        <div class="main-notify-item notify-item-hot-bk">
+          <div class="notify-item-hot notify-item-detail notify-item-text">高溫</div>         
+        </div>
+        <div class="main-notify-item notify-item-cold-bk">
+          <div class="notify-item-cold notify-item-detail notify-item-text">低溫</div>
+        </div>
+        <div class="main-notify-item notify-item-humi-bk" >
+          <div class="notify-item-humi notify-item-detail notify-item-text">濕度</div>
+        </div>
+
+      </div>
+    </div>
+    <div class="announce-ind">
+      <div class='announce-ind-item announce-ind-item-sel'></div>
+      <div class='announce-ind-item'></div>
+      <div class='announce-ind-item'></div>
+      <div class='announce-ind-item'></div>
+      <div class='announce-ind-item'></div>
+      <div class='announce-ind-item'></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="bottom-nav-bar">
+  <div class="bottom-item-container">
+    <div class="bottom-item bottom-item-area">
+      <input class="bottom-item-input" type="text" id="site-id" value="Taipei"/>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
+
