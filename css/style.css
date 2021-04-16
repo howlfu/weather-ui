@@ -961,4 +961,48 @@ button:focus {
 
 }
 
+.bar-chart-item {
+  height: 75%;
+}
+
+.bar-hot-background {
+  margin-top: 1%;
+  position: absolute;
+  height: 60%;
+  width: 4%;
+  background-color: red;
+  left: 15%;
+  z-index: 1;
+}
+
+.bar-hot-value {
+  margin-top: 1%;
+  position: absolute;
+  height: 30%;
+  width: 4%;
+  background-color: #ec8cec;
+  left: 15%;
+  z-index: 2;
+}
+
+.bar-cold-background {
+  margin-top: 1%;
+  position: absolute;
+  height: 60%;
+  width: 4%;
+  background-color: #2f2fc59e;
+  left: 48%;
+  z-index: 1;
+}
+
+.bar-cold-value {
+  margin-top: 1%;
+  position: absolute;
+  height: 52%;
+  width: 4%;
+  background-color: #6bab6bad;
+  left: 48%;
+  z-index: 2;
+}
+
 /* FloorSelectView */
