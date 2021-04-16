@@ -2,7 +2,7 @@
 var timerIndex = 1;
 let sel_id = 'announce-ind-item-sel';
 $(document).ready(function(){
-  paintHot([80,20], ['#00478a', '#95b524'], ['', '20'])
+  tryToPainPie()
   loopDot(timerIndex);
    setInterval(() => {
     timerIndex++;
@@ -15,9 +15,19 @@ $(document).ready(function(){
   console.log( "ready!" );
 });
 
+$( window ).resize(function() {
+  tryToPainPie();
+});
+
+function tryToPainPie() {
+  paintHot([80,20], ['#00478a', '#95b524'], ['', '20']);
+}
+
 function paintHot(vauleAry, colorAry, labelAry) {
   var cv_humi = document.getElementById('humi-pie'); 
   var ctx = cv_humi.getContext('2d');
+  //clear before draw for resize
+	ctx.clearRect(0, 0, cv_humi.width, cv_humi.height);
   var lastend = 0;
   var myTotal = 0;
 
