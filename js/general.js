@@ -2,18 +2,57 @@
 var timerIndex = 1;
 let sel_id = 'announce-ind-item-sel';
 $(document).ready(function(){
-  var cv_hot = document.getElementById('hot-pie'); 
-  var context = cv_hot.getContext('2d');
+  paintHot([80,20], ['#00478a', '#95b524'], ['', '20'])
   loopDot(timerIndex);
    setInterval(() => {
     timerIndex++;
-    loopDot(timerIndex);
     if (timerIndex>6) {
       timerIndex = 1;
     }
+    loopDot(timerIndex);
+    
    }, 5000);
   console.log( "ready!" );
 });
+
+function paintHot(vauleAry, colorAry, labelAry) {
+  var cv_humi = document.getElementById('humi-pie'); 
+  var ctx = cv_humi.getContext('2d');
+  var lastend = 0;
+  var myTotal = 0;
+
+  for(var e = 0; e < vauleAry.length; e++)
+  {
+    myTotal += vauleAry[e];
+  }
+  let divElem = $("#humi-div")
+  var rFator = divElem.width()
+  if(divElem.width() > divElem.height()){
+    rFator = divElem.height()
+  }
+  let r = rFator / 2 - 30
+  var centerW = (divElem.width()) / 2;
+  var centerH = (divElem.height()) / 2
+  for (var i = 0; i < vauleAry.length; i++) {
+    ctx.fillStyle = colorAry[i];
+    ctx.strokeStyle ='white';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(centerW,centerH);
+    var len =  (vauleAry[i]/myTotal) * 2 * Math.PI
+    ctx.arc(centerW , centerH, r, lastend,lastend + len,false);
+    ctx.lineTo(centerW,centerH);
+    ctx.fill();
+    ctx.stroke();
+    ctx.fillStyle ='white';
+    ctx.font = "20px Arial";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    var mid = lastend + len / 2
+    ctx.fillText(labelAry[i],centerW + Math.cos(mid) * (r/2) , centerH + Math.sin(mid) * (r/2));
+    lastend += Math.PI*2*(vauleAry[i]/myTotal);
+  }
+}
 
 function loopDot(index) {
   let dotId = "#ind-" + index;
