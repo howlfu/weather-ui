@@ -16,12 +16,5 @@ var WeatherMainView = createReactClass({
 
     )
   },
-
-  _uiGetMainPage: function () {
-    return (<div className="main">
-      <div class="main-page page-dashboard">
-      </div>
-    </div>);
-  }
 });
 export default WeatherMainView;

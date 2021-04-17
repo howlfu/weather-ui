@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 var ClockHelper = require('../../../helper/clock.helper');
-const MODULE_ID = 'EhomeSigBottomBar';
+const MODULE_ID = 'DashBoardDateTime';
 var _timeHandler;
 function DashboardDatetime() {
   const [date, checkTime] = useState(new Date());
