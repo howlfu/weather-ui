@@ -1,5 +1,5 @@
 var BaseChecker = function () {};
-HexChecker.prototype = Object.assign({}, HexChecker.prototype, {
+BaseChecker.prototype = Object.assign({}, BaseChecker.prototype, {
   isNull: function (whichever) {
     return whichever === undefined || whichever === null;
   },
