@@ -5,5 +5,6 @@
 ## Usage
 ```
 npm install
+gulp compile
 gulp server
 ```
