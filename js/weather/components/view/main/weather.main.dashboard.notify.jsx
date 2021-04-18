@@ -29,7 +29,7 @@ function DashboardNotify(props) {
       }
       ;
     });
-  });
+  }, [props.city]);
   return (
     <div class="main-notify-container" >
       <div class="main-notify">
