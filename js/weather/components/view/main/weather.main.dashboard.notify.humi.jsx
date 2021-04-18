@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 const MODULE_ID = 'DashboardNotifyHumi';
 // var _timeHandler;
-function DashboardNotifyHumi() {
+function DashboardNotifyHumi(props) {
   // const [date, checkTime] = useState(new Date());
   useEffect(function () {
-    tryToPainPie();
+    tryToPainPie(props.value);
   });
 
   return (
@@ -17,8 +17,9 @@ function DashboardNotifyHumi() {
   );
 }
 
-function tryToPainPie() {
-  paintHot([80, 20], ['#00478a', '#95b524'], ['', '20']);
+function tryToPainPie(humiValue) {
+  let restValue = 100 - humiValue
+  paintHot([restValue, humiValue], ['#00478a', '#95b524'], ['', String(humiValue)]);
 }
 
 function paintHot(vauleAry, colorAry, labelAry) {
