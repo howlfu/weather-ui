@@ -11,8 +11,8 @@ var WeatherDashView = createReactClass({
       <div class="main-page page-dashboard">
         <React.Fragment>
           <DashboardDatetime />
-          <DashboardNotify city={this.props.city} />
-          <DashboardIndex />
+          <DashboardNotify city={this.props.city} index={this.props.index} />
+          <DashboardIndex index={this.props.index} />
         </React.Fragment>
       </div>
     </div>);

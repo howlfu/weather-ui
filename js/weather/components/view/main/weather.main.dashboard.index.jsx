@@ -11,14 +11,23 @@ function DashboardIndex(props) {
   //     setTimeout(_timeHandler);
   //   }
   // });
+  let selDotCss = ' announce-ind-item-sel'
+  let norDotCss = 'announce-ind-item'
+  var cssAry = []
+  for (let index = 0; index < 6; index++) {
+    cssAry[index] = norDotCss
+    if (props.index == index) {
+      cssAry[index] = cssAry[index] + selDotCss;
+    }
+  }
   return (
     <div class="announce-ind">
-      <div id="ind-1" class='announce-ind-item announce-ind-item-sel'></div>
-      <div id="ind-2" class='announce-ind-item'></div>
-      <div id="ind-3" class='announce-ind-item'></div>
-      <div id="ind-4" class='announce-ind-item'></div>
-      <div id="ind-5" class='announce-ind-item'></div>
-      <div id="ind-6" class='announce-ind-item'></div>
+      <div id="ind-1" class={cssAry[0]}></div>
+      <div id="ind-2" class={cssAry[1]}></div>
+      <div id="ind-3" class={cssAry[2]}></div>
+      <div id="ind-4" class={cssAry[3]}></div>
+      <div id="ind-5" class={cssAry[4]}></div>
+      <div id="ind-6" class={cssAry[5]}></div>
     </div>
   );
 }

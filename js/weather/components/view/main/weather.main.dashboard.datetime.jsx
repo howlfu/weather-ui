@@ -8,7 +8,7 @@ function DashboardDatetime() {
   useEffect(function () {
     _timeHandler = setInterval(checkTime(new Date()), 30 * 1000);
     return function cleanup() {
-      setTimeout(_timeHandler);
+      clearInterval(_timeHandler);
     }
   });
   return (
