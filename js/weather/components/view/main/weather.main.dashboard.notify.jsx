@@ -8,8 +8,8 @@ const GET_CITY_API = 'https://www.metaweather.com/api/location/search/?query='
 const GET_WEATHER_API = 'https://www.metaweather.com/api/location/'
 // var _timeHandler;
 function DashboardNotify() {
-  const [max, checkMax] = useState(100);
-  const [min, checkMin] = useState(0);
+  const [max, checkMax] = useState(50);
+  const [min, checkMin] = useState(50);
   const [humi, checkHumi] = useState(50);
   useEffect(function () {
     fetchData(GET_CITY_API + 'Taipei', function getId(queryRet) {

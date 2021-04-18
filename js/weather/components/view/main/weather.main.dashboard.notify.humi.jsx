@@ -39,8 +39,8 @@ function paintHot(vauleAry, colorAry, labelAry) {
     rFator = divElem.offsetHeight
   }
   let r = rFator / 2 - 30
-  var centerW = (divElem.offsetWidth) / 2;
-  var centerH = (divElem.offsetHeight) / 2
+  var centerW = (divElem.offsetWidth) / 2 - 3;
+  var centerH = (divElem.offsetHeight) / 2 - 3;
   for (var i = 0; i < vauleAry.length; i++) {
     ctx.fillStyle = colorAry[i];
     ctx.strokeStyle = 'white';
