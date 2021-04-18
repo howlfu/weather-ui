@@ -6,15 +6,25 @@ var WeatherBottView = require('./weather.bottom.view');
 import WeatherDashView from './weather.dash.view'
 //
 var WeatherMainView = createReactClass({
+  getInitialState: function () {
+    return {
+      cityName: 'Taipei'
+    };
+  },
+
   render: function () {
     return (
       <React.Fragment>
         <WeatherTopView />
-        <WeatherDashView />
-        <WeatherBottView />
+        <WeatherDashView city={this.state.cityName} />
+        <WeatherBottView cb={this.getInputCity} />
       </React.Fragment>
 
     )
   },
+  getInputCity: function (name) {
+    console.log('back city: %s', name)
+    this.setState({ cityName: name })
+  }
 });
 export default WeatherMainView;

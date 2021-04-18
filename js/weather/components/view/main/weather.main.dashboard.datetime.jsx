@@ -14,7 +14,7 @@ function DashboardDatetime() {
   return (
     <div className='main-date-time'>
       <div className='main-time'>{ClockHelper.getHourMinuteString(date)}</div>
-      <div className='main-date'>{ClockHelper.getDateWeekdayStringEn(date)}</div>
+      <div className='main-date'>{ClockHelper.getDateWeekdayString(date)}</div>
     </div>
   );
 }

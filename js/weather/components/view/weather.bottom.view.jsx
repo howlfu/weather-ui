@@ -10,8 +10,9 @@ var WeatherBottView = createReactClass({
       if (event.keyCode === 13) {
         let retStr = input.value;
         console.log(retStr)
+        this.props.cb(retStr)
       }
-    });
+    }.bind(this));
   },
   render: function () {
     return (
